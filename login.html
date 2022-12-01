@@ -8,15 +8,17 @@
     <title>Login</title>
   </head>
   <body>
-    <div>
-      <form onsubmit="pegarDados(event)">
-        <fieldset>
+    <div id="content_login">
+      <form id="form"onsubmit="pegarDados(event)">
+        <fieldset id="field">
           <legend>Login</legend>
           <label for="usuario">Usuario:</label>
+          <br>
           <input type="text" id="usuario" name="usuario" required/>
           <br />
           <br />
           <label for="Senha">Senha:</label>
+          <br>
           <input type="password" id="senha" name="senha" required/>
           <br />
           <br />
