@@ -1,0 +1,9 @@
+@import "reset.css";
+@import "colors.css";
+
+
+
+body{
+    background-color: var(--cor2);
+    color: var(--cor1);
+}
