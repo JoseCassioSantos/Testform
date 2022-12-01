@@ -16,8 +16,6 @@ function verStatus() {
     console.log("ta de boa!");
   } else {
     location = "login.html";
-
-    alert("voce não esta logado");
   }
 }
 
