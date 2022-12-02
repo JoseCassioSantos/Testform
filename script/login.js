@@ -4,27 +4,32 @@ localStorage.setItem(
     {
       nome: "cassio",
       senha: "102030",
-      nivel: 2,
+      email: "cassio.santos@neobpo.com.br",
     },
     {
       nome: "emerson",
       senha: "102031",
+      email: "emerson.spereira@neobpo.com.br",
     },
     {
       nome: "joão",
       senha: "102032",
+      email: "cassio.santos@neobpo.com.br",
     },
     {
       nome: "jefferson",
       senha: "102033",
+      email: "cassio.santos@neobpo.com.br",
     },
     {
       nome: "caio",
       senha: "102034",
+      email: "cassio.santos@neobpo.com.br",
     },
     {
       nome: "matheus",
       senha: "102035",
+      email: "cassio.santos@neobpo.com.br",
     },
   ]))
 );
@@ -42,7 +47,7 @@ function pegarDados(evento) {
 
   res = JSON.parse(res);
 
-  //console.log(res)
+  console.log(res)
 
   const pUser = form.get("usuario");
   const pSenha = form.get("senha");
@@ -50,6 +55,7 @@ function pegarDados(evento) {
   res.forEach((nome) => {
     let dUser = nome.nome;
     let dSenha = nome.senha;
+    let dEmail = nome.email
 
     if (pUser !== dUser) {
       console.log(`${pUser} não encontrado`);
@@ -59,9 +65,14 @@ function pegarDados(evento) {
       if (pSenha !== dSenha) {
         console.log("Senha incorreta");
       } else if (pSenha == dSenha) {
+        console.log(dEmail)
         console.log("Tudo ok");
         location = "index.html";
         localStorage.setItem("estado", "logado");
+        localStorage.setItem("perfil", dUser);
+        localStorage.setItem("email", dEmail);
+
+
       }
     }
   });

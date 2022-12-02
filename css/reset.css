@@ -4,7 +4,6 @@
     box-sizing: border-box;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 
-   <--! border: 1px solid red; -->
 }
 
 a{
@@ -24,7 +23,13 @@ p{
 button{
 
     background: var(--bgcor1);
-    color: var();
+    color: var(--cor1);
+    padding: 4px;
 
+}
+
+button:hover{
+
+    color: var(--cor3);
 
 }

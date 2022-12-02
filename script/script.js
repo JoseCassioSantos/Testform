@@ -14,6 +14,14 @@ function verStatus() {
 
   if (currentState === "logado") {
     console.log("ta de boa!");
+
+
+
+    document.querySelector("#conta_nome").innerHTML = `Nome: ${localStorage.getItem("perfil")}`;
+    document.querySelector("#conta_email").innerHTML = `Email: ${localStorage.getItem("email")}`;
+
+  
+
   } else {
     location = "login.html";
   }
