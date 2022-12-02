@@ -8,10 +8,13 @@
     <title>Login</title>
   </head>
   <body>
+    
+    <h1>Site Name</h1>
+
     <div id="content_login">
       <form id="form"onsubmit="pegarDados(event)">
         <fieldset id="field">
-          <legend>Login</legend>
+          <legend><h4> Login </h4></legend>
           <label for="usuario">Usuario:</label>
           <br>
           <input type="text" id="usuario" name="usuario" required/>
@@ -23,7 +26,12 @@
           <br />
           <br />
           <button type="submit">Entrar</button>
+          <br>
+          <br>
+          <span id="reslt"></span>
+          
         </fieldset>
+        
       </form>
     </div>
 <script src="script\login.js"></script>

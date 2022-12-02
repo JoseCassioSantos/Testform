@@ -41,7 +41,7 @@ body{
     justify-content: center;
     align-items: center;
     justify-items: center;
-    margin-top: 5%;
+    margin-top: 2%;
     padding: 5%;
 }
 
@@ -104,7 +104,18 @@ input{
     margin-right: 5%;
     z-index: 2; 
     cursor: pointer; 
+    animation-name: move;
+    animation-duration: 0.5s;
+    animation-iteration-count: 1;
+    animation-timing-function: ease-in-out;
   }
+
+
+  @keyframes move {
+    from { opacity: 0 ;}
+    to {opacity: 1;}
+   }
+
 
 #overlay_content{
    

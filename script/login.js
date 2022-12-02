@@ -47,7 +47,7 @@ function pegarDados(evento) {
 
   res = JSON.parse(res);
 
-  console.log(res)
+  //console.log(res)
 
   const pUser = form.get("usuario");
   const pSenha = form.get("senha");
@@ -59,11 +59,27 @@ function pegarDados(evento) {
 
     if (pUser !== dUser) {
       console.log(`${pUser} não encontrado`);
+
+      setTimeout(() =>{
+ 
+        document.querySelector("#reslt").style.color = "#ff41336e";
+        document.querySelector("#reslt").style.background = "#eea0a0";
+        document.querySelector("#reslt").innerHTML = "Usuario ou senha Incorreto";
+        document.querySelector("#reslt").style.display = "block";
+
+      },1000);
+
+      setTimeout(() =>{
+
+        document.querySelector("#reslt").style.display = "none";
+
+      },4000);
+
+      
     } else {
       console.log(`${pUser} é igual ${dUser} `);
 
       if (pSenha !== dSenha) {
-        console.log("Senha incorreta");
       } else if (pSenha == dSenha) {
         console.log(dEmail)
         console.log("Tudo ok");
