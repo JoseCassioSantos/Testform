@@ -62,7 +62,7 @@ function pegarDados(evento) {
 
       setTimeout(() =>{
  
-        document.querySelector("#reslt").style.color = "#ff41336e";
+        document.querySelector("#reslt").style.color = "var(--cor2)";
         document.querySelector("#reslt").style.background = "#eea0a0";
         document.querySelector("#reslt").innerHTML = "Usuario ou senha Incorreto";
         document.querySelector("#reslt").style.display = "block";
