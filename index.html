@@ -10,10 +10,10 @@
 <body>
     
     <header id="cabecalho"> 
-        <button onclick="logout()">Sair</button>
+        
 
         <a href="#" id="perfil">
-           <span id="perfil_content">?</span>
+           <span id="perfil_content" onclick="on()">?</span>
         </a>
         
     </header>
@@ -35,11 +35,28 @@
             </p>
         </div>
 
+        <div id="overlay">
+            <div id="overlay_content">
+                <button onclick="off()">Voltar</button>
+                <h2 id="Conta_titulo">Conta</h2>
+                <div>
+                    <p id="conta_nome">Nome:</p>
+               
+                    <p id="conta_email">Email:</p>
+                  
+                    <p id="conta_nivel">nivel: 1</p>
+                </div>
+                <button onclick="logout()">Sair</button>
 
+            </div>
+
+        </div>
 
     </main>
 
     
     <script src="script/script.js"></script>
+    <script src="script/perfil.js"></script>
+
 </body>
 </html>

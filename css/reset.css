@@ -20,3 +20,11 @@ p{
     padding: 20px;
     text-indent: 30px;
 }
+
+button{
+
+    background: var(--bgcor1);
+    color: var();
+
+
+}
