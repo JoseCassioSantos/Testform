@@ -139,7 +139,7 @@ input{
     margin-top: 0.5%;
     margin-left: 8% ;
     margin-right: 5%;
-    z-index: 2; 
+    z-index: 2;
     animation-name: move;
     animation-duration: 0.5s;
     animation-iteration-count: 1;
