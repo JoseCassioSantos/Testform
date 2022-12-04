@@ -24,12 +24,14 @@ button{
 
     background: var(--bgcor1);
     color: var(--cor1);
+    border: 1px solid var(--cor1);
     padding: 4px;
+    border-radius: 4px;
 
 }
 
 button:hover{
 
-    color: var(--cor3);
+    border: 1px solid var(--cor3);
 
 }

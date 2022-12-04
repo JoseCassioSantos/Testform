@@ -8,7 +8,8 @@ body{
 
     display: flex;
     justify-content: space-between;
-    box-shadow: 2px 2px 5px var(--cor3);
+    box-shadow: 2px 2px 5px var(--cor3),
+                -2px -2px 9px var(--cor1);
     
 
 }
@@ -65,7 +66,8 @@ body{
     align-items: center;
     justify-items: center;
     padding: 5%;
-    box-shadow: 2px 2px 5px var(--cor3);
+    box-shadow: 2px 2px 3px var(--cor3),
+                -2px -2px 9px var(--cor3);
     border-radius: 5px;
 }
 
@@ -130,7 +132,8 @@ input{
    
     padding: 2%;
     display: block; 
-    box-shadow: 2px 2px 5px var(--cor3);
+    box-shadow: 2px 2px 3px var(--cor3),
+                -2px -2px 9px var(--cor3);
     border-radius: 5px;
     background-color: var(--cor2);
     
