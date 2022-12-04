@@ -71,7 +71,7 @@ setInterval(() => {
 
   document.getElementById(
     "hora"
-  ).innerHTML = `<br>${hora}:${minuto}:${segundo} ${dsemana}<br> ${dia}/${mes}/${ano}`;
+  ).innerHTML = `<br> ⏰ ${hora}:${minuto}:${segundo} ${dsemana}<br> 📆 ${dia}/${mes}/${ano}`;
 }, 1000);
 
 zero = (x) => {
