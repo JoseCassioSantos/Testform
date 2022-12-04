@@ -39,9 +39,7 @@ localStorage.setItem(
   ]))
 );
 
-let res;
-
-function pegarDados(evento) {
+pegarDados = (evento) => {
   evento.preventDefault();
 
   const login = document.querySelector("form");
@@ -52,53 +50,37 @@ function pegarDados(evento) {
 
   res = JSON.parse(res);
 
-  //console.log(res)
-
   const pUser = form.get("usuario");
   const pSenha = form.get("senha");
 
   res.forEach((nome) => {
     let dUser = nome.nome;
     let dSenha = nome.senha;
-    let dEmail = nome.email
+    let dEmail = nome.email;
 
     if (pUser !== dUser) {
-      console.log(`${pUser} não encontrado`);
-
-      setTimeout(() =>{
- 
+      setTimeout(() => {
         document.querySelector("#reslt").style.color = "var(--cor2)";
         document.querySelector("#reslt").style.background = "#eea0a0";
-        document.querySelector("#reslt").innerHTML = "Usuario ou senha Incorreto";
+        document.querySelector("#reslt").innerHTML =
+          "Usuario ou senha Incorreto";
         document.querySelector("#reslt").style.display = "block";
+      }, 1000);
 
-      },1000);
-
-      setTimeout(() =>{
-
+      setTimeout(() => {
         document.querySelector("#reslt").style.display = "none";
-
-      },4000);
-
-      
+      }, 4000);
     } else {
-      console.log(`${pUser} é igual ${dUser} `);
-
       if (pSenha !== dSenha) {
       } else if (pSenha == dSenha) {
-        console.log(dEmail)
-        console.log("Tudo ok");
         location = "index.html";
         localStorage.setItem("estado", "logado");
         localStorage.setItem("perfil", dUser);
         localStorage.setItem("email", dEmail);
-
-
       }
     }
   });
 
   currentState = localStorage.getItem("estado");
 
-  console.log(currentState);
-}
+};

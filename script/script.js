@@ -9,10 +9,7 @@ logout = () => {
 onload = () => {
   currentState = localStorage.getItem("estado");
 
-  console.log(currentState);
-
   if (currentState === "logado") {
-    console.log("ta de boa!");
 
     document.querySelector(
       "#conta_nome"
