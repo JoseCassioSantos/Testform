@@ -55,9 +55,9 @@ body{
 
 }
 
-#perfil_content:hover{
+#perfil:hover{
 
-    border: var(--bgPefil1) solid 2px ;
+    border: var(--bgPefil1) solid 3px ;
 }
 
 #form{
