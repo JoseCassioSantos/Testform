@@ -61,6 +61,7 @@ body{
 }
 
 #form{
+    font-size: 12px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -71,13 +72,33 @@ body{
     border-radius: 5px;
 }
 
+
+
 #field{
 
 padding: 5%;
 border-radius: 5px;
 
 
+
+
 }
+
+#fieldTxt{
+    border-radius: 5px;
+    border: 1px solid var(--cor3);
+    
+    
+    
+    
+}
+
+#fieldTxt p{
+   padding: 2px;
+   font-size: 12px;
+    
+} 
+
 
 input{
 
@@ -110,8 +131,8 @@ input{
     left: 0;
     right: 0;
     bottom: 0;
-    margin-top: 10%;
-    margin-left: 10% ;
+    margin-top: 5%;
+    margin-left: 5% ;
     margin-right: 5%;
     z-index: 2; 
     cursor: pointer; 
@@ -131,7 +152,10 @@ input{
 #overlay_content{
    
     padding: 2%;
-    display: block; 
+    display: block;
+    
+    width: 350px; 
+    height: 250px; 
     box-shadow: 2px 2px 3px var(--cor3),
                 -2px -2px 9px var(--cor3);
     border-radius: 5px;
