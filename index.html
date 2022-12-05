@@ -18,38 +18,64 @@
         <h5 id="hora">?</h5>
     </header>
     
-       
-           <button onclick="pages('home')">Home</button>
-           <button onclick="pages('home2')">Home2</button>
-            
-        
+<main id="main_content">
+       <div id="side_bar">
+        <div class="link_side">
+        <a onclick="pages('home')">🗒️Pagina 1</a>
+        </div>
+        <div class="link_side">
+        <a onclick="pages('home2')">🗒️Pagina 2</a>
+        </div>
+       </div>
+    
+        <div id="content_page">
 
-        <div id="content_page"></div>
+            <div id="corpo">
 
-        <div id="overlay">
-            <div id="overlay_content">
-                <button onclick="off()">🔙 Voltar</button>
-                <br>
-                <br>
-                <h2 id="Conta_titulo"> 🪪 Conta</h2>
-                    <hr>
+                <div id="corpo_content">
                     <br>
-                    <fieldset id="fieldTxt">
-                        <legend>dados</legend>
-                        <p id="conta_nome">Nome:</p>
-                        <p id="conta_email">Email:</p>
-                        <p id="conta_nivel">nivel: 1</p>
-                    </fieldset>
+                    <h1>
+                        Bem-vindo
+                    </h1>
+                    <br>
+                    <hr>
+                    <div >
+                        <h2>titulo</h2>
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni, molestias! Doloribus fuga molestias fugiat labore magnam? Culpa, cum, sequi iusto cumque molestias in illum ad autem debitis doloribus nisi iure
+                        </p>
+                    </div>
                     
-                <br>
-                <button onclick="logout()">⏏ Logoff</button>
+                </div>
+            
+        </div>
 
-            </div>
+      
+
+   
+    </main>
+
+    <div id="overlay">
+        <div id="overlay_content">
+            <button onclick="off()">🔙 Voltar</button>
+            <br>
+            <br>
+            <h2 id="Conta_titulo"> 🪪 Conta</h2>
+                <hr>
+                <br>
+                <fieldset id="fieldTxt">
+                    <legend>dados</legend>
+                    <p id="conta_nome">Nome:</p>
+                    <p id="conta_email">Email:</p>
+                    <p id="conta_nivel">nivel: 1</p>
+                </fieldset>
+                
+            <br>
+            <button onclick="logout()">⏏ Logoff</button>
 
         </div>
 
-    </main>
-
+    </div>
     
     <script src="script/script.js"></script>
     <script src="script/perfil.js"></script>
