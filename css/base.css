@@ -191,3 +191,7 @@ input{
 @media (min-width: 1400px) { 
 
 }
+
+#corpo_content2{
+    background: red;
+}

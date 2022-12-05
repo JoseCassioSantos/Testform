@@ -36,6 +36,11 @@ localStorage.setItem(
       senha: "102036",
       email: "fabiana.souza@neobpo.com.br",
     },
+    {
+      nome: "carlos",
+      senha: "102037",
+      email: "carlos.cavalcante@neobpo.com.br",
+    },
   ]))
 );
 
