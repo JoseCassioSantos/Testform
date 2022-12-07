@@ -78,19 +78,20 @@ zero = (x) => {
   return x;
 };
 
-/* Set the width of the side navigation to 250px and the left margin of the page content to 250px */
 function openNav() {
-  document.getElementById("mySidenav").style.width = "250px";
-  document.getElementById("main").style.marginLeft = "250px";
+  document.getElementById("side_bar").style.width = "150px";
+  //document.getElementById("main").style.marginLeft = "150px";
+  document.querySelector("#openMenu").style.display = "none";
+  document.getElementById("closeMenu").style.display = "block";
+
 }
 
 /* Set the width of the side navigation to 0 and the left margin of the page content to 0 */
 function closeNav() {
-  document.getElementById("mySidenav").style.width = "50px";
-  document.getElementById("main").style.marginLeft = "50px";
+  document.getElementById("side_bar").style.width = "32px";
+  //document.getElementById("main").style.marginLeft = "39";
+  document.querySelector("#openMenu").style.display = "block";
+  document.getElementById("closeMenu").style.display = "none";
+  
 }
 
-function myFunction(x) {
-  x.classList.toggle("change");
-
-}

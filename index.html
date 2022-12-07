@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,200..700,0..1,-50..200" />
     <link rel="stylesheet" href="css\main.css">
     <title>Home</title>
 </head>
@@ -21,54 +21,49 @@
 
     
 <main id="main_content">
-      
-    <div id="mySidenav" class="sidenav">
-        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-        <div class="container" onclick="myFunction(this), openNav()" >
-            <div class="bar1"></div>
-            <div class="bar2"></div>
-            <div class="bar3"></div>
-          </div>
-        <a href="#"><i class="fa fa-home"></i>About</a>
-        <a href="#"><i class="fa fa-home"></i>Services</a>
-        <a href="#"><i class="fa fa-home"></i>Clients</a>
-        <a href="#"><i class="fa fa-home"></i>Contact</a>
-       
-      </div>
-      
-      <!-- Use any element to open the sidenav -->
-     
-      
-      <!-- Add all page content inside this div if you want the side nav to push page content to the right (not used if you only want the sidenav to sit on top of the page -->
-      <div id="main">
-        ...
-      </div>
-    
-    <!--
-    <div id="side_bar">
-   
-        <div class="link_side" onclick="pages('notas')">
-        <span >🗒️- Anotações</span>
-        </div>
-        <div class="link_side" onclick="pages('home')">
-        <span >🗒️- Pagina 2</span>
-        </div>
-  
-    
-       </div>
-         -->
-     
 
 
+    
+    <div id="side_bar" class="sidenav"> 
+        <span id="openMenu" class="material-symbols-outlined" onclick="openNav()">menu</span> 
+        <span id="closeMenu" class="material-symbols-outlined" onclick="closeNav()">menu</span> 
+        <div class="link_conteiner">
+            <span class="material-symbols-outlined" onclick="pages('')">home<p>Home</p></span>
+        </div>
+        
+        <div class="link_conteiner">
+            <span class="material-symbols-outlined" onclick="pages('')">dynamic_feed<p>Links</p></span>
+        </div>
+
+        <div class="link_conteiner">
+            <span class="material-symbols-outlined" onclick="pages('')">chrome_reader_mode<p>Notas</p></span>
+        </div>
+
+        
+        <div class="link_conteiner">
+            <span class="material-symbols-outlined" onclick="pages('')">view_compact_alt<p>Base</p></span>
+        </div >
+        
+        
+        <div class="link_conteiner">
+            <span class="material-symbols-outlined" onclick="pages('')">help_center<p>Sobre</p></span>
+        </div>
+        
+
+       <div id="content_page"></div>
    
     </main>
 
     <div id="overlay">
         <div id="overlay_content">
-            <button onclick="off()">🔙 Voltar</button>
+            <button onclick="off()"><span class="material-symbols-outlined">
+                chevron_left
+                </span></button>
             <br>
             <br>
-            <h2 id="Conta_titulo"> 🪪 Conta</h2>
+            <h2 id="Conta_titulo"> <span class="material-symbols-outlined">
+                account_circle
+                </span> conta</h2>
                 <hr>
                 <br>
                 <fieldset id="fieldTxt">
@@ -79,7 +74,7 @@
                 </fieldset>
                 
             <br>
-            <button onclick="logout()">⏏ Logoff</button>
+            <button onclick="logout()"><span class="material-symbols-outlined">exit_to_app</span> </button>
 
         </div>
 
