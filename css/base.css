@@ -41,6 +41,18 @@ body{
       
 }
 
+#main_content{
+
+    display: flex;
+    
+
+}
+
+#content_page{
+
+    width: 100%;
+
+}
 
 
 
