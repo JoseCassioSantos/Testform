@@ -28,14 +28,15 @@
 
 
 #closeMenu{
+
   display: none;
-  padding-bottom: 20px;
+  padding-bottom: 5px;
   background-color: black;
 
 }
 #openMenu{
 
-  padding-bottom: 20px;
+  padding-bottom: 5px;
   background-color: black;
 }
 
@@ -53,6 +54,7 @@
 
 
 .material-symbols-outlined:hover, .link_conteiner:hover{
+  
   font-variation-settings:
   'FILL' 1,
   'wght' 200,
