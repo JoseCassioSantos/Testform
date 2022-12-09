@@ -8,13 +8,14 @@ body{
 #cabecalho{
     
     
-    padding: 20px;
+    padding: 10px;
 
     display: flex;
     justify-content: space-between;
     box-shadow: 2px 2px 5px var(--cor3),
                 -2px -2px 9px var(--cor1);
     width: 100%;
+    background-color: brown;
 }
 
 
@@ -116,11 +117,13 @@ border-radius: 5px;
 
 #content_form{
     display: flex;
+    border: 1px solid gray;
+    padding: 5px;
 }
 
 
 #form_res{
-
+    border: 1px solid gray;
     width: 100%;
 }
 
