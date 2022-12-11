@@ -18,6 +18,22 @@ body{
     background-color: brown;
 }
 
+.card_main{
+    
+    margin: 20px;
+    width: 200px;
+    height: 200x;
+    border: 1px solid gray;
+    border-radius: 20px;
+    padding: 20px;
+    box-shadow: 2px 2px 5px var(--cor3);
+
+}
+
+.card_main p{
+
+    font-size: 0.7rem;
+}
 
 
 #perfil{
@@ -45,12 +61,14 @@ body{
 #main_content{
 
     display: flex;
+
     
 
 }
 
 #content_page{
 
+ 
     width: 100%;
     padding: 20px;
 
