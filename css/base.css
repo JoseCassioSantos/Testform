@@ -199,6 +199,14 @@ border-radius: 5px;
     
 }
 
+
+#home_content{
+
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
 /*@media (min-width: 576px) { 
 
 
