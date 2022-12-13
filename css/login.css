@@ -1,0 +1,8 @@
+#bg_login{
+
+    background: rgb(2,0,36);
+    background: linear-gradient(40deg, rgb(15, 15, 15) 33%, rgba(121,9,19,1) 58%, rgba(64,32,31,1) 100%) no-repeat;
+    height: 100vh;
+ 
+}
+
