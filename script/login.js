@@ -67,7 +67,7 @@ pegarDados = (evento) => {
       setTimeout(() => {
         document.querySelector("#reslt").style.color = "var(--cor2)";
         document.querySelector("#reslt").style.background = "#eea0a0";
-        document.querySelector("#reslt").innerHTML = "Usuario ou senha Incorreto";
+        document.querySelector("#reslt").textContent = "Usuario ou senha Incorreto";
         document.querySelector("#reslt").style.display = "block";
       }, 1000);
 
@@ -78,7 +78,7 @@ pegarDados = (evento) => {
       if (pSenha !== dSenha) {
       } else if (pSenha == dSenha) {
         location = "index.html";
-        localStorage.setItem("estado", "logado");
+        localStorage.setItem("estado","logado");
         localStorage.setItem("perfil", dUser);
         localStorage.setItem("email", dEmail);
       }
