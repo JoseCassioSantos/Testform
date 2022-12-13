@@ -6,11 +6,9 @@ formInc = (evento) => {
 
     const iform = new FormData(dados);
 
+    for(var pair of iform.entries()) {
+      console.log( `${pair[0]} : ${pair[1]}`);
+   }
 
-    for (const value of iform.values()) {
-        console.log(value)
-      }
-
-      
 
 }
