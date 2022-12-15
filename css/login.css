@@ -10,7 +10,12 @@
 #hora2{
     
 font-size: larger;
-padding: 10px;
+margin: 5px;
+padding: 5px;
+background: rgba(34, 33, 33, 0.9);
+display: table;
+border-radius: 12px;
+text-align: center;
     
 }
 

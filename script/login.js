@@ -99,18 +99,18 @@ setInterval(() => {
   let segundo = novaHora.getSeconds();
 
   let meses = [
-    "Janeiro",
-    "Fevereiro",
-    "Março",
-    "Abril",
-    "Maio",
-    "Junho",
-    "Julho",
-    "Augosto",
-    "Setembro",
-    "Outubro",
+    "Jan",
+    "Fev",
+    "Mar",
+    "Abr",
+    "Mai",
+    "Jun",
+    "Jul",
+    "Aug",
+    "Set",
+    "Out",
     "Nov",
-    "Dezembro",
+    "Dez",
   ];
   let semana = [
     "Domingo",
@@ -132,7 +132,7 @@ setInterval(() => {
 
   document.getElementById(
     "hora2"
-  ).innerHTML = `<br>  ${hora}:${minuto}:${segundo} ${dsemana}<br>  ${dia}/${mes}/${ano}`;
+  ).innerHTML = `<br> <h1> ${hora}:${minuto}:${segundo} </h1><br> ${dsemana}<br>  ${dia}/${mes}/${ano}`;
 }, 1000);
 
 zero = (x) => {
