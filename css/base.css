@@ -46,6 +46,7 @@ body{
     margin: 5px;
     font-weight: bolder;
     text-align: center; 
+    color: var(--cor6);
 
 }
 
@@ -227,6 +228,16 @@ border-radius: 5px;
   font-size: 500px;
   text-align: center;
   color: #f0f8ff28;
+}
+
+footer{
+
+    width: 100%;
+    height: 50px;
+    background-color: var(--cor5); 
+    align-items: center;
+    justify-content: flex-end;
+    
 }
 
 /*@media (min-width: 576px) { 

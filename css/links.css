@@ -8,9 +8,7 @@
     background: linear-gradient(90deg, var(--bgcor1) 0%, var(--bgcor1) 35%, var(--cor2) 100%);
   }
 
-body #links {
-  height: 200px;
-}
+
 body #links #lin-cont {
   display: flex;
   flex-wrap: wrap;

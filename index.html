@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="src/icons/relogio-alarma.png" type="image/x-icon">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,200..700,0..1,-50..200" />
     <link rel="stylesheet" href="css\main.css">
@@ -14,9 +15,9 @@
     <header id="cabecalho"> 
         
 
-        <a href="#" id="perfil">
+        <span href="#" id="perfil">
            <span id="perfil_content" onclick="on()">?</span>
-        </a>
+        </span>
         <h5 id="hora">?</h5>
     </header>
 
@@ -49,41 +50,68 @@
      </div>  
      
      <div id="content_page">
-        <h1>Bem-vindo</h1>
+        <h1>IronTipping</h1>
+
+        <h2>Conheça a ferramenta</h2>
 
 <div id="home_content">
 
 
 <div class="card_main">
-    <h5>titulo</h5>
+    
+    <span class="material-symbols-outlined" onclick="pages('links')" title="Links">dynamic_feed<p>Links</p></span>
+    
+    <hr>
     <p class="p_card">
-Lorem ipsum dolor sit, amet consectetur adipisicing elit. Enim sint ipsam beatae perferendis minus fugiat explicabo dignissimos accusamus autem, saepe quae ipsum? Similique doloremque cumque optio commodi voluptatem blanditiis explicabo!
+        <br>
+Na Sessão onde você vai encontrar as farramentas para usar no seu dia a dia,
+<br>
+<br>
+são links para portais, ferramentas de atendimento.
 
     </p>
 </div>
 <div class="card_main">
-    <h5>titulo</h5>
+    <span class="material-symbols-outlined" onclick="pages('notas')" title="Links">chrome_reader_mode<p>Anotações</p></span>
+    
+    <hr>
     <p class="p_card">
-Lorem ipsum dolor sit, amet consectetur adipisicing elit. Enim sint ipsam beatae perferendis minus fugiat explicabo dignissimos accusamus autem, saepe quae ipsum? Similique doloremque cumque optio commodi voluptatem blanditiis explicabo!
+        <br>
+Modulo de notas interativo e persistente,
+<br>
+<br>
+Faça sua Anotações salve, apague ou copie com um click
 
     </p>
 </div>
-
 <div class="card_main">
-    <h5>titulo</h5>
+    <span class="material-symbols-outlined" onclick="pages('andamento')" title="Links">view_compact_alt<p>Base</p></span>
+    
+    <hr>
     <p class="p_card">
-Lorem ipsum dolor sit, amet consectetur adipisicing elit. Enim sint ipsam beatae perferendis minus fugiat explicabo dignissimos accusamus autem, saepe quae ipsum? Similique doloremque cumque optio commodi voluptatem blanditiis explicabo!
+        <br>
+A Base tem como objetivo juntar varios comandos que usamos no dia a dia
+<br>
+<br>
+Assim podendo consultar na hora da necessidade
 
     </p>
 </div>
-
 <div class="card_main">
-    <h5>titulo</h5>
+    <span class="material-symbols-outlined" onclick="pages('sobre')" title="Links">help_center<p>Sobre</p></span>
+    
+    <hr>
     <p class="p_card">
-Lorem ipsum dolor sit, amet consectetur adipisicing elit. Enim sint ipsam beatae perferendis minus fugiat explicabo dignissimos accusamus autem, saepe quae ipsum? Similique doloremque cumque optio commodi voluptatem blanditiis explicabo!
+        <br>
+Em sobre você pode saber mais sobre mim sobre o IronTipping
+<br>
+<br>
+E entrar em contato se necessario
 
     </p>
 </div>
+
+
 
 </div>
 
@@ -123,6 +151,11 @@ Lorem ipsum dolor sit, amet consectetur adipisicing elit. Enim sint ipsam beatae
     <script src="script/perfil.js"></script>
     <script src="script/pages.js"></script>
     <script src="script/notas.js"></script>
+    <footer>
+        Ver. 0.0.0
+    </footer>
 
 </body>
+
+
 </html>
