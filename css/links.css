@@ -1,5 +1,7 @@
 
 .under {
+    margin-top: 10px;
+    margin-bottom: 10px;
     display: inline-block;
     width: 100%;
     vertical-align: middle;
@@ -11,6 +13,7 @@ body #links {
 }
 body #links #lin-cont {
   display: flex;
+  flex-wrap: wrap;
 }
 body #links #lin-cont a {
   text-decoration: none;
