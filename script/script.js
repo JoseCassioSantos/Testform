@@ -88,7 +88,7 @@ function openNav() {
 
 /* Set the width of the side navigation to 0 and the left margin of the page content to 0 */
 function closeNav() {
-  document.getElementById("side_bar").style.width = "39px";
+  document.getElementById("side_bar").style.width = "49px";
   //document.getElementById("main").style.marginLeft = "39";
   document.querySelector("#openMenu").style.display = "block";
   document.getElementById("closeMenu").style.display = "none";

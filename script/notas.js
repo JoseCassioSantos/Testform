@@ -6,11 +6,11 @@ formInc = (evento) => {
 
     const iform = new FormData(dados);
 
-    for(var pair of iform.entries()) {
-     
-      console.log(`*${pair[0]}* : '${pair[1]}'`);
-
-   }
+    let incidente = iform.get("incidente");
+    let site = iform.get("site");
+    let operação = iform.get("operação");
+    let assunto = iform.get("assunto");
+    let ferramenta = iform.get("ferramenta");
 
    
 

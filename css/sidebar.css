@@ -7,9 +7,10 @@
 
 .sidenav{
   height: 100vh; 
-  width: 39px; 
+  width: 49px; 
   top: 0;
   left: 0;
+  padding-left: 2px;
   background-color: var(--cor5); 
   overflow-x: hidden; 
 
@@ -38,6 +39,7 @@
 
   padding-bottom: 5px;
   background-color: var(--cor3);
+  width: 150px;
 }
 
 .material-symbols-outlined {
