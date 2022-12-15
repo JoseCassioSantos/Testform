@@ -15,7 +15,7 @@ body{
     box-shadow: 2px 2px 5px var(--cor3),
                 -2px -2px 9px var(--cor1);
     width: 100%;
-    background-color: brown;
+    background-color: #a52a2a;
 }
 
 .card_main{
@@ -206,6 +206,9 @@ border-radius: 5px;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+
 }
 
 #manu_content{

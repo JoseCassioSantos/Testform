@@ -1,8 +1,24 @@
 #bg_login{
 
-    background: rgb(2,0,36);
-    background: linear-gradient(40deg, rgb(15, 15, 15) 33%, rgba(121,9,19,1) 58%, rgba(64,32,31,1) 100%) no-repeat;
+    background-image: url("/src/img/back.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
     height: 100vh;
  
 }
 
+#hora2{
+    
+font-size: larger;
+padding: 10px;
+    
+}
+
+form{
+
+    background: rgba(34, 33, 33, 0.9);
+}
+
+h1{
+    background: rgba(34, 33, 33, 0.9);
+}

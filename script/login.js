@@ -88,3 +88,56 @@ pegarDados = (evento) => {
   currentState = localStorage.getItem("estado");
 
 };
+
+
+setInterval(() => {
+  let novaHora = new Date();
+  let data = new Date();
+
+  let hora = novaHora.getHours();
+  let minuto = novaHora.getMinutes();
+  let segundo = novaHora.getSeconds();
+
+  let meses = [
+    "Janeiro",
+    "Fevereiro",
+    "Março",
+    "Abril",
+    "Maio",
+    "Junho",
+    "Julho",
+    "Augosto",
+    "Setembro",
+    "Outubro",
+    "Nov",
+    "Dezembro",
+  ];
+  let semana = [
+    "Domingo",
+    "segunda-feira",
+    "terça-feira",
+    "quarta-feira",
+    "quinta-feira",
+    "sexta-feira",
+    "Sabado",
+  ];
+
+  let dia = data.getDate();
+  let mes = meses[data.getMonth()];
+  let ano = novaHora.getFullYear();
+  let dsemana = semana[data.getDay()];
+
+  minuto = zero(minuto);
+  segundo = zero(segundo);
+
+  document.getElementById(
+    "hora2"
+  ).innerHTML = `<br>  ${hora}:${minuto}:${segundo} ${dsemana}<br>  ${dia}/${mes}/${ano}`;
+}, 1000);
+
+zero = (x) => {
+  if (x < 10) {
+    x = "0" + x;
+  }
+  return x;
+};
