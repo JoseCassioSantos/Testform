@@ -1,4 +1,10 @@
 //logout
+
+home = () => {
+  document.location.reload(true)
+
+}
+
 logout = () => {
   localStorage.setItem("estado", "");
   localStorage.setItem("perfil", "");
