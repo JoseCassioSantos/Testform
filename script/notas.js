@@ -3,15 +3,25 @@ formInc = (evento) => {
     evento.preventDefault();
 
     const dados = document.querySelector("#formNotas");
+    const form = new FormData(dados);
 
-    const iform = new FormData(dados);
+    const output = document.querySelector("#form_res")
+    
 
-    let incidente = iform.get("incidente");
-    let site = iform.get("site");
-    let operação = iform.get("operação");
-    let assunto = iform.get("assunto");
-    let ferramenta = iform.get("ferramenta");
+    for (const [key, value] of form) {
+        output.innerHTML += `*${key}:* ${value}<br>`;
+      }
+      console.log(output)
 
-   
+}
 
+
+copy = () =>{
+    const copyText = document.querySelector("#form_res").innerText
+
+    copyText.select();
+    copyText.setSelectionRange(0, 99999); 
+    navigator.clipboard.writeText(copyText.value);
+
+    console.log(copyText)
 }
