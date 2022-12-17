@@ -17,11 +17,11 @@ formInc = (evento) => {
 
 
 copy = () =>{
-    const copyText = document.querySelector("#form_res").innerText
+    const outputRes = document.querySelector("#form_res").innerText
 
     copyText.select();
     copyText.setSelectionRange(0, 99999); 
     navigator.clipboard.writeText(copyText.value);
 
-    console.log(copyText)
+    console.log(outputRes)
 }

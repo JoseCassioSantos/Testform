@@ -45,11 +45,12 @@
 .material-symbols-outlined {
   font-variation-settings:
   'FILL' 0,
-  'wght' 200,
+  'wght' 100,
   'GRAD' 0,
   'opsz' 48;
-  font-size: 2em;
-  padding: 0;
+  font-size: 1.7em;
+  padding-left: 8px;
+  padding-bottom: 10px;
   margin: 0;
   
 }
