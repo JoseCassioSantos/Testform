@@ -16,7 +16,7 @@ formInc = (evento) => {
 }
 
 
-copy = () =>{
+copy = () => {
     const outputRes = document.querySelector("#form_res").innerText
 
     copyText.select();
