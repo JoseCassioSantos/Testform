@@ -30,6 +30,7 @@ onload = () => {
   } else {
     location = "login.html";
   }
+  
 };
 
 setInterval(() => {
