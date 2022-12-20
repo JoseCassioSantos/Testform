@@ -13,7 +13,6 @@
   padding-left: 2px;
   background-color: var(--cor5); 
   overflow-x: hidden; 
-
   transition: 0.5s; 
 }
 .sidenav p{
